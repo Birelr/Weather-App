@@ -7,3 +7,5 @@ export const geoOptions = {
     "X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com",
   },
 };
+
+export const weatherAPI = "7accf5055d342759bf44ae173fdf7486";

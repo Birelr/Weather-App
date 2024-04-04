@@ -11,7 +11,6 @@ function Weatherdetail() {
       <div className=" mt-7 h-80 w-96 bg-custom-blue-transparent m-auto rounded-md flex flex-col justify-center items-center text-custom-purple2 fill-custom-purple2">
         <div className="flex flex-row justify-between w-full p-4 ">
           <div>
-            <sens />
             <img src={sens} alt="" className="" />
           </div>
           <p>Thermal Sensation</p>
