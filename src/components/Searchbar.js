@@ -12,6 +12,14 @@ const customStyles = {
     border: "none",
     color: "rgb(255, 255, 255)",
   }),
+  input: (provided, state) => ({
+    ...provided,
+    color: "#FAFAFA", // İstediğiniz renge ayarlayın
+  }),
+  singleValue: (provided, state) => ({
+    ...provided,
+    color: "#7F7F98", // İstediğiniz renge ayarlayın
+  }),
   menu: (provided, state) => ({
     ...provided,
     backgroundColor: "rgb(59, 59, 82)",
