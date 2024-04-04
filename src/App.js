@@ -15,7 +15,7 @@ function App() {
       <div className=" bg-background h-screen">
         <Logo />
         <Greetings />
-        <Searchbar />
+        <Searchbar onSearchChange={handleOnSearch} />
         <Currentweather />
       </div>
     </div>

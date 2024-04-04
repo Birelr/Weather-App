@@ -1,6 +1,7 @@
 import React from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
 import { useState } from "react";
+import { geoOptions, GEO_URL } from "../api";
 
 const customStyles = {
   control: (provided, state) => ({
@@ -26,7 +27,20 @@ const customStyles = {
 function Searchbar({ onSearchChange }) {
   const [search, setSearch] = useState(null);
 
-  const loadOptions = (inputValue) => {};
+  const loadOptions = (inputValue) => {
+    return fetch(`${GEO_URL}/cities?&namePrefix=${inputValue}`, geoOptions)
+      .then((response) => response.json())
+      .then((response) => {
+        return {
+          options: response.data.map((city) => {
+            return {
+              value: `${city.latitude} ${city.longitude}`,
+              label: `${city.name}, ${city.countryCode}`,
+            };
+          }),
+        };
+      });
+  };
 
   const handleOnChange = (searchData) => {
     setSearch(searchData);
