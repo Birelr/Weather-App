@@ -28,7 +28,10 @@ function Searchbar({ onSearchChange }) {
   const [search, setSearch] = useState(null);
 
   const loadOptions = (inputValue) => {
-    return fetch(`${GEO_URL}/cities?&namePrefix=${inputValue}`, geoOptions)
+    return fetch(
+      `${GEO_URL}/cities?&namePrefix=${inputValue}&sort=-population`,
+      geoOptions
+    )
       .then((response) => response.json())
       .then((response) => {
         return {
