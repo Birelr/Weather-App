@@ -32,7 +32,8 @@ module.exports = {
       },
       colors: {
         "custom-purple": "rgb(127, 128, 150)",
-        "custom-blue-transparent": "rgba(22, 22, 30, 0.5)",
+        "custom-blue-transparent": "rgba(22, 22, 31, 0.5)",
+        "custom-purple2": "rgb(191, 191, 210)",
         "gray-900": "#13131A",
         "gray-800": "#16161F",
         "gray-700": "#1C1C27",
