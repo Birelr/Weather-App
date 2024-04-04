@@ -31,6 +31,7 @@ module.exports = {
         150: "150px",
       },
       colors: {
+        "custom-purple": "rgb(127, 128, 150)",
         "custom-blue-transparent": "rgba(22, 22, 30, 0.5)",
         "gray-900": "#13131A",
         "gray-800": "#16161F",

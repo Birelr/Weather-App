@@ -10,6 +10,7 @@ import rainday from "../Assets/Weather/rainday.svg";
 import rainnight from "../Assets/Weather/rainnight.svg";
 import stormday from "../Assets/Weather/stormday.svg";
 import stormnight from "../Assets/Weather/stormnight.svg";
+import snowy from "../Assets/Weather/snow.svg";
 
 function Currentweather() {
   return (
@@ -27,7 +28,7 @@ function Currentweather() {
               <p>few clouds</p>
             </div>
             <div className="">
-              <img src={clearnight} alt="" className="w-150" />
+              <img src={clearday} alt="" className="w-150 " />
             </div>
           </div>
         </div>
